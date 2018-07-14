@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {articles} from './fixtures';
+import {articles} from '../fixtures';
 // import {render} from 'react-dom'
 // import ArticleList from './components/ArticleList'
 // import './App.css';
