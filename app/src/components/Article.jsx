@@ -7,8 +7,13 @@ import CommentList from './CommentList'
 class Article extends Component {
     static propTypes = {
         article: PropTypes.shape({
-            text:PropTypes.string.isRequired
-        }).isRequired
+            text:PropTypes.string.isRequired,
+            comments:PropTypes.string.isRequired,
+            id:PropTypes.string.isRequired            
+        }).isRequired,     
+        isOpen: PropTypes.bool,
+        toggleOpen:PropTypes.func
+      
     }  
     componentWillReceiveProps(nextProps){
          console.log('UPDATING',this.props.isOpen,nextProps.isOpen)
@@ -37,7 +42,7 @@ class Article extends Component {
        
     }
     componentDidMount(){
-        console.log('---','mouned')
+        
     }
 
 
